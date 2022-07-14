@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><Component xmlns:bns="http://api.platform.boomi.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" componentId="91eb5002-ac7a-4822-9748-e34a5412133c" createdBy="AAA.com" createdDate="2021-10-01T08:03:03Z" currentVersion="true" deleted="false" folderFullPath="Avon AAAA; Omar" folderId="RjozNjYwMDEz" folderName="[Flow 1a] Shop -&gt; Omar" modifiedBy="AAA.com" modifiedDate="2022-03-03T14:49:42Z" name="MapShopOrderToOmarOrder" type="transform.map" version="46">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map fromProfile="492dfd91-1790-42f9-9d21-8c8461656afa" toProfile="922046ec-53fb-4c12-8ed4-3f2d8f701974">
+      <Mappings>
+        <Mapping fromKey="29" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='29']" fromNamePath="order/Object/detail/Object/currency" fromType="profile" toKey="7" toKeyPath="*[@key='1']/*[@key='4']/*[@key='7']" toNamePath="Order/Object/orderCurrency" toType="profile"/>
+        <Mapping fromKey="379" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='379']" fromNamePath="order/Object/detail/Object/total_tax" fromType="profile" toKey="11" toKeyPath="*[@key='1']/*[@key='4']/*[@key='11']" toNamePath="Order/Object/orderTaxAmount" toType="profile"/>
+        <Mapping fromKey="135" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='118']/*[@key='123']/*[@key='124']/*[@key='125']/*[@key='135']" fromNamePath="order/Object/detail/Object/line_items/Array/ArrayElement1/Object/sku" fromType="profile" toKey="33" toKeyPath="*[@key='1']/*[@key='4']/*[@key='27']/*[@key='28']/*[@key='29']/*[@key='30']/*[@key='33']" toNamePath="Order/Object/orderLines/Array/ArrayElement1/Object/itemId" toType="profile"/>
+        <Mapping fromKey="133" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='118']/*[@key='123']/*[@key='124']/*[@key='125']/*[@key='133']" fromNamePath="order/Object/detail/Object/line_items/Array/ArrayElement1/Object/quantity" fromType="profile" toKey="35" toKeyPath="*[@key='1']/*[@key='4']/*[@key='27']/*[@key='28']/*[@key='29']/*[@key='30']/*[@key='35']" toNamePath="Order/Object/orderLines/Array/ArrayElement1/Object/orderedQuantity" toType="profile"/>
+        <Mapping fromKey="128" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='118']/*[@key='123']/*[@key='124']/*[@key='125']/*[@key='128']" fromNamePath="order/Object/detail/Object/line_items/Array/ArrayElement1/Object/fulfillment_status" fromType="profile" toKey="32" toKeyPath="*[@key='1']/*[@key='4']/*[@key='27']/*[@key='28']/*[@key='29']/*[@key='30']/*[@key='32']" toNamePath="Order/Object/orderLines/Array/ArrayElement1/Object/orderLineStatus" toType="profile"/>
+        <Mapping fromKey="28" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='28']" fromNamePath="order/Object/detail/Object/created_at" fromType="profile" toKey="47" toKeyPath="*[@key='1']/*[@key='4']/*[@key='47']" toNamePath="Order/Object/createdDateTime" toType="profile"/>
+        <Mapping fromKey="49" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='31']/*[@key='48']/*[@key='49']" fromNamePath="order/Object/detail/Object/customer/Object/id" fromType="profile" toKey="48" toKeyPath="*[@key='1']/*[@key='4']/*[@key='48']" toNamePath="Order/Object/customerAccount" toType="profile"/>
+        <Mapping fromKey="286" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='286']" fromNamePath="order/Object/detail/Object/subtotal_price" fromType="profile" toKey="9" toKeyPath="*[@key='1']/*[@key='4']/*[@key='9']" toNamePath="Order/Object/orderSubtotalAmount" toType="profile"/>
+        <Mapping fromKey="331" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='284']/*[@key='322']/*[@key='323']/*[@key='324']/*[@key='331']" fromNamePath="order/Object/detail/Object/shipping_lines/Array/ArrayElement1/Object/title" fromType="profile" toKey="25" toKeyPath="*[@key='1']/*[@key='4']/*[@key='20']/*[@key='21']/*[@key='22']/*[@key='23']/*[@key='25']" toNamePath="Order/Object/chargeLines/Array/ChargeLine/Object/chargeType" toType="profile"/>
+        <Mapping fromFunction="8" fromKey="2" fromType="function" toKey="24" toKeyPath="*[@key='1']/*[@key='4']/*[@key='20']/*[@key='21']/*[@key='22']/*[@key='23']/*[@key='24']" toNamePath="Order/Object/chargeLines/Array/ChargeLine/Object/chargeLineId" toType="profile"/>
+        <Mapping fromKey="339" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='284']/*[@key='322']/*[@key='323']/*[@key='324']/*[@key='327']/*[@key='332']/*[@key='334']/*[@key='336']/*[@key='339']" fromNamePath="order/Object/detail/Object/shipping_lines/Array/ArrayElement1/Object/price_set/Object/presentment_money/Object/amount" fromType="profile" toKey="26" toKeyPath="*[@key='1']/*[@key='4']/*[@key='20']/*[@key='21']/*[@key='22']/*[@key='23']/*[@key='26']" toNamePath="Order/Object/chargeLines/Array/ChargeLine/Object/chargeNetValue" toType="profile"/>
+        <Mapping fromFunction="8" fromKey="2" fromType="function" toKey="79" toKeyPath="*[@key='1']/*[@key='4']/*[@key='27']/*[@key='28']/*[@key='29']/*[@key='30']/*[@key='38']/*[@key='76']/*[@key='77']/*[@key='78']/*[@key='79']" toNamePath="Order/Object/orderLines/Array/ArrayElement1/Object/taxLines/Array/ArrayElement1/Object/taxLineId" toType="profile"/>
+        <Mapping fromKey="163" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='118']/*[@key='123']/*[@key='124']/*[@key='125']/*[@key='145']/*[@key='160']/*[@key='161']/*[@key='162']/*[@key='163']" fromNamePath="order/Object/detail/Object/line_items/Array/ArrayElement1/Object/tax_lines/Array/ArrayElement1/Object/title" fromType="profile" toKey="80" toKeyPath="*[@key='1']/*[@key='4']/*[@key='27']/*[@key='28']/*[@key='29']/*[@key='30']/*[@key='38']/*[@key='76']/*[@key='77']/*[@key='78']/*[@key='80']" toNamePath="Order/Object/orderLines/Array/ArrayElement1/Object/taxLines/Array/ArrayElement1/Object/taxType" toType="profile"/>
+        <Mapping fromKey="164" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='118']/*[@key='123']/*[@key='124']/*[@key='125']/*[@key='145']/*[@key='160']/*[@key='161']/*[@key='162']/*[@key='164']" fromNamePath="order/Object/detail/Object/line_items/Array/ArrayElement1/Object/tax_lines/Array/ArrayElement1/Object/price" fromType="profile" toKey="81" toKeyPath="*[@key='1']/*[@key='4']/*[@key='27']/*[@key='28']/*[@key='29']/*[@key='30']/*[@key='38']/*[@key='76']/*[@key='77']/*[@key='78']/*[@key='81']" toNamePath="Order/Object/orderLines/Array/ArrayElement1/Object/taxLines/Array/ArrayElement1/Object/taxValue" toType="profile"/>
+        <Mapping fromCacheJoinKey="0" fromKey="130" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='118']/*[@key='123']/*[@key='124']/*[@key='125']/*[@key='130']" fromNamePath="order/Object/detail/Object/line_items/Array/ArrayElement1/Object/id" fromType="profile" toKey="31" toKeyPath="*[@key='1']/*[@key='4']/*[@key='27']/*[@key='28']/*[@key='29']/*[@key='30']/*[@key='31']" toNamePath="Order/Object/orderLines/Array/ArrayElement1/Object/sourceOrderLineId" toType="profile"/>
+        <Mapping fromKey="116" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='116']" fromNamePath="order/Object/detail/Object/id" fromType="profile" toKey="6" toKeyPath="*[@key='1']/*[@key='4']/*[@key='6']" toNamePath="Order/Object/sourceOrderId" toType="profile"/>
+        <Mapping fromFunction="10" fromKey="3" fromType="function" toKey="46" toKeyPath="*[@key='1']/*[@key='4']/*[@key='13']/*[@key='14']/*[@key='46']" toNamePath="Order/Object/orderChannel/Object/marketCode" toType="profile"/>
+        <Mapping fromFunction="11" fromKey="3" fromType="function" toKey="5" toKeyPath="*[@key='1']/*[@key='4']/*[@key='5']" toNamePath="Order/Object/omarOrderId" toType="profile"/>
+        <Mapping fromKey="339" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='284']/*[@key='322']/*[@key='323']/*[@key='324']/*[@key='327']/*[@key='332']/*[@key='334']/*[@key='336']/*[@key='339']" fromNamePath="order/Object/detail/Object/shipping_lines/Array/ArrayElement1/Object/price_set/Object/presentment_money/Object/amount" fromType="profile" toFunction="12" toKey="2" toType="function"/>
+        <Mapping fromKey="286" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='286']" fromNamePath="order/Object/detail/Object/subtotal_price" fromType="profile" toFunction="12" toKey="1" toType="function"/>
+        <Mapping fromFunction="12" fromKey="2" fromType="function" toKey="12" toKeyPath="*[@key='1']/*[@key='4']/*[@key='12']" toNamePath="Order/Object/orderGrandTotal" toType="profile"/>
+        <Mapping fromKey="462" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='118']/*[@key='123']/*[@key='124']/*[@key='125']/*[@key='145']/*[@key='160']/*[@key='161']/*[@key='162']/*[@key='462']" fromNamePath="order/Object/detail/Object/line_items/Array/ArrayElement1/Object/tax_lines/Array/ArrayElement1/Object/rate" fromType="profile" toKey="83" toKeyPath="*[@key='1']/*[@key='4']/*[@key='27']/*[@key='28']/*[@key='29']/*[@key='30']/*[@key='38']/*[@key='76']/*[@key='77']/*[@key='78']/*[@key='83']" toNamePath="Order/Object/orderLines/Array/ArrayElement1/Object/taxLines/Array/ArrayElement1/Object/taxRate" toType="profile"/>
+        <Mapping fromKey="436" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='284']/*[@key='322']/*[@key='323']/*[@key='324']/*[@key='350']/*[@key='353']/*[@key='354']/*[@key='433']/*[@key='436']" fromNamePath="order/Object/detail/Object/shipping_lines/Array/ArrayElement1/Object/tax_lines/Array/ArrayElement1/Object/rate" fromType="profile" toKey="93" toKeyPath="*[@key='1']/*[@key='4']/*[@key='20']/*[@key='21']/*[@key='22']/*[@key='23']/*[@key='86']/*[@key='87']/*[@key='88']/*[@key='89']/*[@key='93']" toNamePath="Order/Object/chargeLines/Array/ChargeLine/Object/taxLines/Array/ArrayElement1/Object/taxRate" toType="profile"/>
+        <Mapping fromKey="435" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='284']/*[@key='322']/*[@key='323']/*[@key='324']/*[@key='350']/*[@key='353']/*[@key='354']/*[@key='433']/*[@key='435']" fromNamePath="order/Object/detail/Object/shipping_lines/Array/ArrayElement1/Object/tax_lines/Array/ArrayElement1/Object/price" fromType="profile" toKey="92" toKeyPath="*[@key='1']/*[@key='4']/*[@key='20']/*[@key='21']/*[@key='22']/*[@key='23']/*[@key='86']/*[@key='87']/*[@key='88']/*[@key='89']/*[@key='92']" toNamePath="Order/Object/chargeLines/Array/ChargeLine/Object/taxLines/Array/ArrayElement1/Object/taxValue" toType="profile"/>
+        <Mapping fromFunction="8" fromKey="2" fromType="function" toKey="90" toKeyPath="*[@key='1']/*[@key='4']/*[@key='20']/*[@key='21']/*[@key='22']/*[@key='23']/*[@key='86']/*[@key='87']/*[@key='88']/*[@key='89']/*[@key='90']" toNamePath="Order/Object/chargeLines/Array/ChargeLine/Object/taxLines/Array/ArrayElement1/Object/taxLineId" toType="profile"/>
+        <Mapping fromKey="434" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='284']/*[@key='322']/*[@key='323']/*[@key='324']/*[@key='350']/*[@key='353']/*[@key='354']/*[@key='433']/*[@key='434']" fromNamePath="order/Object/detail/Object/shipping_lines/Array/ArrayElement1/Object/tax_lines/Array/ArrayElement1/Object/title" fromType="profile" toKey="91" toKeyPath="*[@key='1']/*[@key='4']/*[@key='20']/*[@key='21']/*[@key='22']/*[@key='23']/*[@key='86']/*[@key='87']/*[@key='88']/*[@key='89']/*[@key='91']" toNamePath="Order/Object/chargeLines/Array/ChargeLine/Object/taxLines/Array/ArrayElement1/Object/taxType" toType="profile"/>
+        <Mapping fromKey="153" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='118']/*[@key='123']/*[@key='124']/*[@key='125']/*[@key='142']/*[@key='146']/*[@key='148']/*[@key='150']/*[@key='153']" fromNamePath="order/Object/detail/Object/line_items/Array/ArrayElement1/Object/price_set/Object/presentment_money/Object/amount" fromType="profile" toFunction="16" toKey="3" toType="function"/>
+        <Mapping fromKey="133" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='118']/*[@key='123']/*[@key='124']/*[@key='125']/*[@key='133']" fromNamePath="order/Object/detail/Object/line_items/Array/ArrayElement1/Object/quantity" fromType="profile" toFunction="16" toKey="1" toType="function"/>
+        <Mapping fromCacheJoinKey="0" fromKey="153" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='118']/*[@key='123']/*[@key='124']/*[@key='125']/*[@key='142']/*[@key='146']/*[@key='148']/*[@key='150']/*[@key='153']" fromNamePath="order/Object/detail/Object/line_items/Array/ArrayElement1/Object/price_set/Object/presentment_money/Object/amount" fromType="profile" toKey="40" toKeyPath="*[@key='1']/*[@key='4']/*[@key='27']/*[@key='28']/*[@key='29']/*[@key='30']/*[@key='37']/*[@key='39']/*[@key='40']" toNamePath="Order/Object/orderLines/Array/ArrayElement1/Object/linePricing/Object/regularNetPrice" toType="profile"/>
+        <Mapping fromFunction="16" fromKey="2" fromType="function" toKey="41" toKeyPath="*[@key='1']/*[@key='4']/*[@key='27']/*[@key='28']/*[@key='29']/*[@key='30']/*[@key='37']/*[@key='39']/*[@key='41']" toNamePath="Order/Object/orderLines/Array/ArrayElement1/Object/linePricing/Object/offerNetPrice" toType="profile"/>
+        <Mapping fromFunction="16" fromKey="3" fromType="function" toKey="96" toKeyPath="*[@key='1']/*[@key='4']/*[@key='27']/*[@key='28']/*[@key='29']/*[@key='30']/*[@key='96']" toNamePath="Order/Object/orderLines/Array/ArrayElement1/Object/orderedLineAmount" toType="profile"/>
+        <Mapping fromFunction="16" fromKey="3" fromType="function" toKey="97" toKeyPath="*[@key='1']/*[@key='4']/*[@key='27']/*[@key='28']/*[@key='29']/*[@key='30']/*[@key='97']" toNamePath="Order/Object/orderLines/Array/ArrayElement1/Object/deliveredLineAmount" toType="profile"/>
+        <Mapping fromKey="331" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='284']/*[@key='322']/*[@key='323']/*[@key='324']/*[@key='331']" fromNamePath="order/Object/detail/Object/shipping_lines/Array/ArrayElement1/Object/title" fromType="profile" toFunction="15" toKey="1" toType="function"/>
+        <Mapping fromKey="120" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='120']" fromNamePath="order/Object/detail/Object/name" fromType="profile" toKey="50" toKeyPath="*[@key='1']/*[@key='4']/*[@key='50']" toNamePath="Order/Object/orderNumber" toType="profile"/>
+        <Mapping fromKey="82" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='82']" fromNamePath="order/Object/detail/Object/financial_status" fromType="profile" toKey="49" toKeyPath="*[@key='1']/*[@key='4']/*[@key='49']" toNamePath="Order/Object/paymentStatus" toType="profile"/>
+        <Mapping fromFunction="15" fromKey="2" fromType="function" toKey="75" toKeyPath="*[@key='1']/*[@key='4']/*[@key='70']/*[@key='71']/*[@key='72'][@tagListKey='1']/*[@key='73'][@tagListKey='1']/*[@key='75'][@tagListKey='1']" toNamePath="Order/Object/channelSpecificData/Array/ArrayElement1[Object/propertyKey='orderPriority']/Object/propertyValue" toTagListKey="1" toType="profile"/>
+        <Mapping fromKey="85" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='85']" fromNamePath="order/Object/detail/Object/gateway" fromType="profile" toKey="98" toKeyPath="*[@key='1']/*[@key='4']/*[@key='98']" toNamePath="Order/Object/paymentMethod" toType="profile"/>
+        <Mapping fromKey="100" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='80']/*[@key='97']/*[@key='98']/*[@key='99']/*[@key='100']" fromNamePath="order/Object/detail/Object/discount_codes/Array/ArrayElement1/Object/code" fromType="profile" toKey="75" toKeyPath="*[@key='1']/*[@key='4']/*[@key='70']/*[@key='71']/*[@key='72'][@tagListKey='2']/*[@key='73'][@tagListKey='2']/*[@key='75'][@tagListKey='2']" toNamePath="Order/Object/channelSpecificData/Array/ArrayElement1[Object/propertyKey='discountCode']/Object/propertyValue" toTagListKey="2" toType="profile"/>
+        <Mapping fromKey="184" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='431']/*[@key='432']/*[@key='118']/*[@key='123']/*[@key='124']/*[@key='125']/*[@key='176']/*[@key='180']/*[@key='181']/*[@key='183']/*[@key='184']" fromNamePath="order/Object/detail/Object/line_items/Array/ArrayElement1/Object/total_discount_set/Object/shop_money/Object/amount" fromType="profile" toFunction="16" toKey="2" toType="function"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true">
+        <FunctionStep cacheEnabled="true" cacheOption="document" category="Numeric" key="8" name="Line Item Increment" position="8" sumEnabled="false" type="LineItemIncrement" x="30.0" y="710.0">
+          <Inputs>
+            <Input default="1" key="1" name="Increment Basis"/>
+            <Input key="2" name="Reset Value"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="ProcessProperty" key="10" name="Get Dynamic Process Property" position="10" sumEnabled="false" type="PropertyGet" x="30.0" y="406.0">
+          <Inputs>
+            <Input default="DPP_MARKET_CODE" key="1" name="Property Name"/>
+            <Input key="2" name="Default Value"/>
+          </Inputs>
+          <Outputs>
+            <Output key="3" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="ProcessProperty" key="11" name="Get Dynamic Process Property" position="11" sumEnabled="false" type="PropertyGet" x="30.0" y="11.0">
+          <Inputs>
+            <Input default="DPP_OMAR_ORDER_ID" key="1" name="Property Name"/>
+            <Input key="2" name="Default Value"/>
+          </Inputs>
+          <Outputs>
+            <Output key="3" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="Numeric" key="12" name="Math Add" position="12" sumEnabled="false" type="MathAdd" x="30.0" y="279.0">
+          <Inputs>
+            <Input key="1" name="Value"/>
+            <Input key="2" name="Value to Add"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="Scripting" key="15" name="Scripting" position="15" sumEnabled="false" type="Scripting" x="30.0" y="834.0">
+          <Inputs>
+            <Input key="1" name="shippingCode"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="priority"/>
+          </Outputs>
+          <Configuration>
+            <Scripting language="groovy2" preserveOrder="true" useComponent="false">
+              <ScriptToExecute>String sc = shippingCode.toLowerCase();
+
+if (sc.contains("next day") || sc.contains("express"))
+  priority = "HIGH"; //  priority = "EXPRESS";
+else
+  priority = "NORMAL"; // "STD"; </ScriptToExecute>
+              <Input dataType="character" index="1" name="shippingCode"/>
+              <Output index="2" name="priority"/>
+            </Scripting>
+          </Configuration>
+        </FunctionStep>
+        <FunctionStep category="userdefined" id="53d48bca-488f-4c5e-b76b-8a8a567d697c" key="16" name="ApplyShopifyDiscount" position="16" type="userdefined" x="30.0" y="532.0">
+          <Inputs>
+            <Input key="1" name="quantity"/>
+            <Input key="2" name="discount"/>
+            <Input key="3" name="unit_price"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="offer_price"/>
+            <Output key="3" name="line_amount"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+      </Functions>
+      <Defaults>
+        <Default toKey="8" value="new"/>
+        <Default toKey="34" value="EA"/>
+        <Default toKey="15" value="Shopify"/>
+        <Default toKey="51" value="1"/>
+        <Default toKey="17" value="SHP"/>
+        <Default toKey="75" value="NORMAL"/>
+        <Default toKey="84" value="standard"/>
+      </Defaults>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</Component>
